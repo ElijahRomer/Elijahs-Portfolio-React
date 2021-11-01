@@ -2,12 +2,12 @@
   text-decoration: none;
   color: Yellow !important;
   transition: color 0.3s;
-  font-size: larger;
+  /* font-size: larger; */
 }
 
 #footerLink:hover {
   text-decoration: none;
   color: rgb(209, 178, 0) !important;
   transition: color 0.3s;
-  font-size: larger;
+  /* font-size: larger; */
 }

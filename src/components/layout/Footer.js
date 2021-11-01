@@ -31,7 +31,7 @@ function Footer() {
           <i className="fab fa-stack-overflow"></i> Stack Overflow
         </a>
         <br />
-        <br />
+
         <span className="text-light">
           © 2021 Elijah Romer. All rights reserved.
         </span>
