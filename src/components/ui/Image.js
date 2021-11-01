@@ -9,6 +9,7 @@ function Image(props) {
           alt={props.alt}
           className="m-auto rounded-circle img-thumbnail"
         />
+        <figcaption>{props.caption}</figcaption>
       </figure>
     </div>
   );
