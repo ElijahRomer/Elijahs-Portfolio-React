@@ -7,9 +7,9 @@ function Image(props) {
         <img
           src={props.src}
           alt={props.alt}
-          className="m-auto rounded-circle img-thumbnail"
+          className="m-auto my-3 rounded-circle img-thumbnail"
         />
-        <figcaption>{props.caption}</figcaption>
+        <figcaption className="mx-auto">{props.caption}</figcaption>
       </figure>
     </div>
   );
