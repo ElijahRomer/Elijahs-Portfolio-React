@@ -9,7 +9,7 @@ function WorkSample(props) {
       </a>
       <p>{props.description}</p>
       <a
-        class={props.workClass + ' rounded-3 d-block'}
+        className={props.workClass + ' rounded-3 d-block'}
         href={props.picLink}
       ></a>
     </div>

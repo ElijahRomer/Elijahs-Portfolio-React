@@ -6,6 +6,8 @@ import WorkSample from '../components/ui/WorkSample';
 
 import worksData, { featuredWorkData } from '../data/data';
 
+import './Work.css';
+
 function WorkPage() {
   return (
     <Card>
