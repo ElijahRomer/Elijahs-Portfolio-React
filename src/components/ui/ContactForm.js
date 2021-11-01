@@ -16,14 +16,23 @@ function ContactForm() {
       case 'text':
         console.log(`TEXT CHANGE REGISTERED`);
         setNameValue(e.target.value);
+        if (nameInputValidation) {
+          validateName(e);
+        }
         break;
       case 'email':
         console.log(`EMAIL CHANGE REGISTERED`);
         setEmailValue(e.target.value);
+        if (emailInputValidation) {
+          validateEmail(e);
+        }
         break;
       case 'textarea':
         console.log(`TEXTAREA CHANGE REGISTERED`);
         setMessageValue(e.target.value);
+        if (messageInputValidation) {
+          validateMessage(e);
+        }
         break;
     }
   }
