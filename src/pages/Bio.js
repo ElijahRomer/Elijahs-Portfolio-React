@@ -66,7 +66,7 @@ function BioPage() {
       <hr />
       <BioRow>
         <h2>Technologies and Strengths</h2>
-        <div class="col-sm-10 col-lg-6 mx-auto">
+        <div className="col-sm-10 col-lg-6 mx-auto">
           <p>
             <strong>
               I currently know the MERN stack and am quite familiar with the
@@ -87,35 +87,31 @@ function BioPage() {
             <li>MongoDB</li>
           </ul>
         </div>
-        <div class="col-sm-10 col-lg-6 mx-auto">
+        <div className="col-sm-10 col-lg-6 mx-auto">
           <p>
             <strong>My professional strengths include:</strong>
           </p>
-          <p>
-            <ul>
-              <li>Coachability.</li>
-              <li>Solution oriented, problem solver.</li>
-              <li>Teamwork from previous collaborative work experience.</li>
-              <li>Positivity/ enthusiasm, even in the face of adversity.</li>
-              <li>Learning new technologies- fast.</li>
-              <li>Strong grasp of underlying computer science.</li>
-              <li>
-                Teachning others what I know, and knowing when to ask questions.
-              </li>
-              <li>Planning, strategizing, and executing to meet deadlines.</li>
-              <li>Attention to writing clean, maintainable code.</li>
-              <li>
-                Going the extra mile to deliver the best possible product.
-              </li>
-            </ul>
-          </p>
+          <ul>
+            <li>Coachability.</li>
+            <li>Solution oriented, problem solver.</li>
+            <li>Teamwork from previous collaborative work experience.</li>
+            <li>Positivity/ enthusiasm, even in the face of adversity.</li>
+            <li>Learning new technologies- fast.</li>
+            <li>Strong grasp of underlying computer science.</li>
+            <li>
+              Teachning others what I know, and knowing when to ask questions.
+            </li>
+            <li>Planning, strategizing, and executing to meet deadlines.</li>
+            <li>Attention to writing clean, maintainable code.</li>
+            <li>Going the extra mile to deliver the best possible product.</li>
+          </ul>
         </div>
       </BioRow>
       <hr />
       <BioRow>
         <h2>Interests and Hobbies</h2>
-        <div class="my-1 col-sm-12 col-lg-8">
-          <p class="">
+        <div className="my-1 col-sm-12 col-lg-8">
+          <p>
             When I am not coding, I'm usually traveling, skydiving, or both! I
             love any and all things that expand my horizons and introduce me to
             new experiences and ideas. My favorite pastime is learning for the

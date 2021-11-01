@@ -20,6 +20,7 @@ function WorkPage() {
       <hr />
       <WorkRow>
         <FeaturedWork
+          key={featuredWorkData.workClass}
           title={featuredWorkData.title}
           repoLink={featuredWorkData.repoLink}
           description={featuredWorkData.description}
@@ -31,6 +32,7 @@ function WorkPage() {
       <WorkRow>
         {worksData.map((work) => (
           <WorkSample
+            key={work.workClass}
             title={work.title}
             repoLink={work.repoLink}
             description={work.description}
