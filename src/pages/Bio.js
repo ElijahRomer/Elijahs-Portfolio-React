@@ -6,6 +6,7 @@ import Image from '../components/ui/Image';
 import BioRow from '../components/ui/BioRow';
 import profilePicture from '../images/profilePicture.jpg';
 import headDown from '../images/headDown.jpg';
+import ScrollToTopBtn from '../components/ui/ScrollToTopBtn';
 
 function BioPage() {
   return (
@@ -144,6 +145,10 @@ function BioPage() {
           alt="UpsideDown at 10,000'"
           caption="Upside-down at 10,000' in the skies above Ottawa, IL."
         />
+      </BioRow>
+      <hr />
+      <BioRow>
+        <ScrollToTopBtn />
       </BioRow>
     </Card>
   );

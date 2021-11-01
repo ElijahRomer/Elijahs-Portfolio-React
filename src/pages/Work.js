@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../components/ui/Card';
+import ScrollToTopBtn from '../components/ui/ScrollToTopBtn';
 import FeaturedWork from '../components/ui/FeaturedWork';
 import WorkRow from '../components/ui/WorkRow';
 import WorkSample from '../components/ui/WorkSample';
@@ -37,6 +38,10 @@ function WorkPage() {
             picLink={work.picLink}
           />
         ))}
+      </WorkRow>
+      <hr />
+      <WorkRow>
+        <ScrollToTopBtn />
       </WorkRow>
     </Card>
   );
