@@ -4,8 +4,6 @@ import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
-import { NavLink } from 'react-router-dom';
-
 function MainNavigation() {
   return (
     <Navbar bg="primary" variant="dark" expand="lg">

@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../components/ui/Card';
 import BioRow from '../components/ui/BioRow';
+import ContactForm from '../components/ui/ContactForm';
 import './Work.css';
 
 function ContactPage() {
@@ -17,13 +18,13 @@ function ContactPage() {
         <ul className="contact-methods">
           <li>
             <strong>
-              <i class="fas fa-mobile-alt"></i> Call/ Text:
+              <i className="fas fa-mobile-alt"></i> Call/ Text:
             </strong>{' '}
             1-815-388-4756
           </li>
           <li>
             <strong>
-              <i class="far fa-envelope"></i> Email:
+              <i className="far fa-envelope"></i> Email:
             </strong>{' '}
             <a className="repo-link" href="mailto: ElijahARomer@gmail.com">
               ElijahARomer@gmail.com
@@ -31,7 +32,7 @@ function ContactPage() {
           </li>
           <li>
             <strong>
-              <i class="fab fa-github"></i> GitHub:
+              <i className="fab fa-github"></i> GitHub:
             </strong>{' '}
             <a className="repo-link" href="https://github.com/ElijahRomer">
               /ElijahRomer
@@ -49,6 +50,10 @@ function ContactPage() {
             </a>
           </li>
         </ul>
+      </BioRow>
+      <hr />
+      <BioRow>
+        <ContactForm />
       </BioRow>
     </Card>
   );
