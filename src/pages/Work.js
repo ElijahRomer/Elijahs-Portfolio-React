@@ -2,6 +2,9 @@ import React from 'react';
 import Card from '../components/ui/Card';
 import WorkRow from '../components/ui/WorkRow';
 import WorkSample from '../components/ui/WorkSample';
+
+import worksData from '../data/data';
+
 import { LinkContainer } from 'react-router-bootstrap';
 import './Work.css';
 
