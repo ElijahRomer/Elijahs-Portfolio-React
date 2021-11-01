@@ -3,14 +3,14 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 import Card from '../components/ui/Card';
 import Image from '../components/ui/Image';
-import Row from '../components/ui/Row';
+import BioRow from '../components/ui/BioRow';
 import profilePicture from '../images/profilePicture.jpg';
 import headDown from '../images/headDown.jpg';
 
 function BioPage() {
   return (
     <Card>
-      <Row>
+      <BioRow>
         <h1 className="text-center">Hello! I'm Elijah Romer.</h1>
         <div className="row my-2">
           <LinkContainer to="/work">
@@ -19,9 +19,9 @@ function BioPage() {
             </button>
           </LinkContainer>
         </div>
-      </Row>
+      </BioRow>
       <hr />
-      <Row>
+      <BioRow>
         <Image src={profilePicture} alt="Elijah Romer" />
         <div className="my-1 col-sm-12 col-lg-8">
           <h4>Who is this guy?</h4>
@@ -61,9 +61,9 @@ function BioPage() {
             face of the evolving technological landscape.
           </p>
         </div>
-      </Row>
+      </BioRow>
       <hr />
-      <Row>
+      <BioRow>
         <h2>Technologies and Strengths</h2>
         <div class="col-sm-10 col-lg-6 mx-auto">
           <p>
@@ -109,9 +109,9 @@ function BioPage() {
             </ul>
           </p>
         </div>
-      </Row>
+      </BioRow>
       <hr />
-      <Row>
+      <BioRow>
         <h2>Interests and Hobbies</h2>
         <div class="my-1 col-sm-12 col-lg-8">
           <p class="">
@@ -144,7 +144,7 @@ function BioPage() {
           alt="UpsideDown at 10,000'"
           caption="Upside-down at 10,000' in the skies above Ottawa, IL."
         />
-      </Row>
+      </BioRow>
     </Card>
   );
 }

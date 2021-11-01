@@ -1,5 +1,7 @@
 import React from 'react';
 import Card from '../components/ui/Card';
+import WorkRow from '../components/ui/WorkRow';
+import WorkSample from '../components/ui/WorkSample';
 import { LinkContainer } from 'react-router-bootstrap';
 import './Work.css';
 
@@ -51,6 +53,24 @@ function WorkPage() {
         ></a>
       </div>
       <hr />
+      <WorkRow>
+        <WorkSample
+          title="README Generator"
+          workClass="readme-generator"
+          picLink="https://github.com/ElijahRomer/ReadMeGenerator#readme"
+        >
+          <p>
+            A simple CLI interface application that streamlines the process of
+            creating a README file for your projects, saving time and energy for
+            coding. Developing this project was my first serious exercise in
+            utilizing, troubleshooting, and executing JavaScript files within
+            the Node.js runtime. I learned how to create my own npm modules, and
+            create custom commands to initialize them anywhere. The Inquirer
+            module opened my eyes to the possibilities of CLI interface
+            applications.{' '}
+          </p>
+        </WorkSample>
+      </WorkRow>
     </Card>
   );
 }

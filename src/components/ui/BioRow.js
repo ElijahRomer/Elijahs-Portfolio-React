@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Row(props) {
+function BioRow(props) {
   return <div className="row mx-auto">{props.children}</div>;
 }
 
-export default Row;
+export default BioRow;
