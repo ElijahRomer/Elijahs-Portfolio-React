@@ -9,8 +9,10 @@ function MainNavigation() {
   return (
     <Navbar bg="primary" variant="dark" expand="lg" expanded={expanded}>
       <Container>
-        <LinkContainer to="/" exact>
-          <Navbar.Brand>Elijah Romer</Navbar.Brand>
+        <LinkContainer to="/Elijahs-Portfolio-React/">
+          <Navbar.Brand onClick={() => setExpanded(false)}>
+            Elijah Romer
+          </Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle
           onClick={() => setExpanded(expanded ? false : 'expanded')}
@@ -18,16 +20,31 @@ function MainNavigation() {
         />
         <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
           <Nav>
-            <LinkContainer to="/" exact activeClassName="active">
+            <LinkContainer
+              to="/Elijahs-Portfolio-React/"
+              activeClassName="active"
+            >
               <Nav.Link onClick={() => setExpanded(false)}>Bio</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/work" exact activeClassName="active">
+            <LinkContainer
+              to="/Elijahs-Portfolio-React/work"
+              exact
+              activeClassName="active"
+            >
               <Nav.Link onClick={() => setExpanded(false)}>Work</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/resume" exact activeClassName="active">
+            <LinkContainer
+              to="/Elijahs-Portfolio-React/resume"
+              exact
+              activeClassName="active"
+            >
               <Nav.Link onClick={() => setExpanded(false)}>Resume</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/contact" exact activeClassName="active">
+            <LinkContainer
+              to="/Elijahs-Portfolio-React/contact"
+              exact
+              activeClassName="active"
+            >
               <Nav.Link onClick={() => setExpanded(false)}>Contact</Nav.Link>
             </LinkContainer>
           </Nav>

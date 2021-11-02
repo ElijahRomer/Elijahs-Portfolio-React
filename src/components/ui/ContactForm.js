@@ -106,7 +106,7 @@ function ContactForm() {
   return (
     <>
       <Form onSubmit={handleFormSubmit}>
-        <h2>Contact Me!</h2>
+        <h2>Or send me a message directly here!</h2>
         <Form.Group className="mb-3" controlId="name">
           <Form.Label>Name</Form.Label>
           <Form.Control
@@ -138,7 +138,7 @@ function ContactForm() {
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group className="mb-3" controlId="message">
-          <Form.Label>Example textarea</Form.Label>
+          <Form.Label>Message</Form.Label>
           <Form.Control
             as="textarea"
             rows={5}

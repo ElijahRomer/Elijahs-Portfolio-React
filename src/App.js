@@ -10,10 +10,13 @@ function App() {
   return (
     <Layout>
       <Switch>
-        <Route exact path="/" component={BioPage} />
-        <Route path="/resume" component={ResumePage} />
-        <Route path="/work" component={WorkPage} />
-        <Route path="/contact" component={ContactPage} />
+        <Route path="/Elijahs-Portfolio-React/" exact component={BioPage} />
+        <Route path="/Elijahs-Portfolio-React/resume" component={ResumePage} />
+        <Route path="/Elijahs-Portfolio-React/work" component={WorkPage} />
+        <Route
+          path="/Elijahs-Portfolio-React/contact"
+          component={ContactPage}
+        />
       </Switch>
     </Layout>
   );

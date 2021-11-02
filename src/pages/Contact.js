@@ -49,6 +49,17 @@ function ContactPage() {
               /ElijahRomer
             </a>
           </li>
+          <li>
+            <strong>
+              <i className="fab fa-stack-overflow"></i> Stack Overflow :
+            </strong>{' '}
+            <a
+              className="repo-link"
+              href="https://stackoverflow.com/users/15502947/elijah-romer?tab=profile"
+            >
+              Elijah Romer
+            </a>
+          </li>
         </ul>
       </BioRow>
       <hr />
