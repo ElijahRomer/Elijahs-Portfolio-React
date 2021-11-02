@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Elijahs-Portfolio-React/static/css/main.67e49487.chunk.css",
-    "main.js": "/Elijahs-Portfolio-React/static/js/main.6a31d7f1.chunk.js",
-    "main.js.map": "/Elijahs-Portfolio-React/static/js/main.6a31d7f1.chunk.js.map",
+    "main.js": "/Elijahs-Portfolio-React/static/js/main.867918b3.chunk.js",
+    "main.js.map": "/Elijahs-Portfolio-React/static/js/main.867918b3.chunk.js.map",
     "runtime-main.js": "/Elijahs-Portfolio-React/static/js/runtime-main.24d462b0.js",
     "runtime-main.js.map": "/Elijahs-Portfolio-React/static/js/runtime-main.24d462b0.js.map",
     "static/css/2.1cf03e63.chunk.css": "/Elijahs-Portfolio-React/static/css/2.1cf03e63.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.1cf03e63.chunk.css",
     "static/js/2.9f9d61a9.chunk.js",
     "static/css/main.67e49487.chunk.css",
-    "static/js/main.6a31d7f1.chunk.js"
+    "static/js/main.867918b3.chunk.js"
   ]
 }
