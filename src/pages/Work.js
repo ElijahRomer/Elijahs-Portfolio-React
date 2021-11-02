@@ -1,9 +1,9 @@
 import React from 'react';
 import Card from '../components/ui/Card';
 import ScrollToTopBtn from '../components/ui/ScrollToTopBtn';
-import FeaturedWork from '../components/ui/FeaturedWork';
+import FeaturedProject from '../components/ui/FeaturedProject';
 import WorkRow from '../components/ui/WorkRow';
-import WorkSample from '../components/ui/WorkSample';
+import Project from '../components/ui/Project';
 
 import worksData, { featuredWorkData } from '../data/data';
 
@@ -19,7 +19,7 @@ function WorkPage() {
       </h6>
       <hr />
       <WorkRow>
-        <FeaturedWork
+        <FeaturedProject
           key={featuredWorkData.workClass}
           title={featuredWorkData.title}
           repoLink={featuredWorkData.repoLink}
@@ -31,7 +31,7 @@ function WorkPage() {
       <hr />
       <WorkRow>
         {worksData.map((work) => (
-          <WorkSample
+          <Project
             key={work.workClass}
             title={work.title}
             repoLink={work.repoLink}

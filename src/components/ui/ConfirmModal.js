@@ -9,18 +9,21 @@ function ConfirmModal(props) {
 
   return (
     <>
-      <Button
-        variant="primary"
-        onClick={(e) => {
-          let valid = props.fn(e);
-          if (valid) {
-            handleShow();
-          }
-        }}
-      >
-        submit
-      </Button>
-
+      <div className="d-flex justify-content-center">
+        <Button
+          className="btn btn-primary col-sm-12 col-md-4 mx-auto"
+          onClick={async (e) => {
+            let valid = await props.fn(e);
+            console.log(valid);
+            if (valid) {
+              handleShow();
+              valid = false;
+            }
+          }}
+        >
+          Submit
+        </Button>
+      </div>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Your message has been sent!</Modal.Title>

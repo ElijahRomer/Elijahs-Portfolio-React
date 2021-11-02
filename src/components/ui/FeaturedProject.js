@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FeaturedWork(props) {
+function FeaturedProject(props) {
   return (
     <>
       <h3 key={props.workClass}>{props.title}</h3>
@@ -15,4 +15,4 @@ function FeaturedWork(props) {
   );
 }
 
-export default FeaturedWork;
+export default FeaturedProject;

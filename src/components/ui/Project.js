@@ -1,6 +1,6 @@
 import React from 'react';
 
-function WorkSample(props) {
+function Project(props) {
   return (
     <div className="col-md-10 col-lg-5 my-4 mx-auto" key={props.workClass}>
       <h4>{props.title}</h4>
@@ -16,4 +16,4 @@ function WorkSample(props) {
   );
 }
 
-export default WorkSample;
+export default Project;

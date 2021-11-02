@@ -3,9 +3,9 @@ import { Form } from 'react-bootstrap';
 import ConfirmModal from './ConfirmModal';
 
 function ContactForm() {
-  const [nameInputValidation, setNameInputValidation] = useState(false);
-  const [emailInputValidation, setEmailInputValidation] = useState(false);
-  const [messageInputValidation, setMessageInputValidation] = useState(false);
+  const [nameInputInvalid, setNameInputInvalid] = useState();
+  const [emailInputInvalid, setEmailInputInvalid] = useState();
+  const [messageInputInvalid, setMessageInputInvalid] = useState();
 
   const [nameValue, setNameValue] = useState('');
   const [emailValue, setEmailValue] = useState('');
@@ -16,21 +16,21 @@ function ContactForm() {
       case 'text':
         console.log(`TEXT CHANGE REGISTERED`);
         setNameValue(e.target.value);
-        if (nameInputValidation) {
+        if (nameInputInvalid) {
           validateName(e);
         }
         break;
       case 'email':
         console.log(`EMAIL CHANGE REGISTERED`);
         setEmailValue(e.target.value);
-        if (emailInputValidation) {
+        if (emailInputInvalid) {
           validateEmail(e);
         }
         break;
       case 'textarea':
         console.log(`TEXTAREA CHANGE REGISTERED`);
         setMessageValue(e.target.value);
-        if (messageInputValidation) {
+        if (messageInputInvalid) {
           validateMessage(e);
         }
         break;
@@ -42,10 +42,10 @@ function ContactForm() {
     console.log(name);
     console.log(name.length);
     if (name.length < 3) {
-      setNameInputValidation(true);
+      setNameInputInvalid(true);
       return;
     }
-    setNameInputValidation(false);
+    setNameInputInvalid(false);
   }
 
   function validateEmail(e) {
@@ -53,42 +53,54 @@ function ContactForm() {
     const email = e.target.value;
     console.log(email);
     if (!emailRegex.test(email)) {
-      setEmailInputValidation(true);
+      setEmailInputInvalid(true);
       return;
     }
-    setEmailInputValidation(false);
+    setEmailInputInvalid(false);
   }
 
   function validateMessage(e) {
     const message = e.target.value;
     console.log(message);
     if (message.length < 3) {
-      setMessageInputValidation(true);
+      setMessageInputInvalid(true);
       return;
     }
-    setMessageInputValidation(false);
+    setMessageInputInvalid(false);
   }
 
   function handleFormSubmit(e) {
     e.preventDefault();
-    if (
-      !nameInputValidation &&
-      !emailInputValidation &&
-      !messageInputValidation
-    ) {
-      const messageData = {
-        name: nameValue,
-        email: emailValue,
-        message: messageValue,
-      };
-      return true;
+    console.log(nameInputInvalid);
+    console.log(emailInputInvalid);
+    console.log(messageInputInvalid);
+    if (nameInputInvalid || nameInputInvalid === undefined) {
+      setNameInputInvalid(true);
+      return false;
+    } else if (emailInputInvalid || emailInputInvalid === undefined) {
+      setEmailInputInvalid(true);
+      return false;
+    } else if (messageInputInvalid || messageInputInvalid === undefined) {
+      setMessageInputInvalid(true);
+      return false;
     }
+
+    const messageData = {
+      name: nameValue,
+      email: emailValue,
+      message: messageValue,
+    };
+    console.log(messageData);
+    return true;
   }
 
   function clearForm() {
     setNameValue('');
     setEmailValue('');
     setMessageValue('');
+    setNameInputInvalid();
+    setEmailInputInvalid();
+    setMessageInputInvalid();
   }
 
   return (
@@ -104,7 +116,7 @@ function ContactForm() {
             onBlur={validateName}
             onChange={setFormField}
             value={nameValue}
-            isInvalid={nameInputValidation}
+            isInvalid={nameInputInvalid}
           />
           <Form.Control.Feedback type="invalid">
             Must be at least 3 characters.
@@ -119,7 +131,7 @@ function ContactForm() {
             onBlur={validateEmail}
             onChange={setFormField}
             value={emailValue}
-            isInvalid={emailInputValidation}
+            isInvalid={emailInputInvalid}
           />
           <Form.Control.Feedback type="invalid">
             Must be a valid Email Address
@@ -134,7 +146,7 @@ function ContactForm() {
             onBlur={validateMessage}
             onChange={setFormField}
             value={messageValue}
-            isInvalid={messageInputValidation}
+            isInvalid={messageInputInvalid}
           />
           <Form.Control.Feedback type="invalid">
             Must be at least 3 characters
