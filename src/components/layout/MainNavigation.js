@@ -22,6 +22,7 @@ function MainNavigation() {
           <Nav>
             <LinkContainer
               to="/Elijahs-Portfolio-React/"
+              exact
               activeClassName="active"
             >
               <Nav.Link onClick={() => setExpanded(false)}>Bio</Nav.Link>
