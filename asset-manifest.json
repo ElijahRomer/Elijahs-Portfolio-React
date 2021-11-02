@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Elijahs-Portfolio-React/static/css/main.67e49487.chunk.css",
+    "main.js": "/Elijahs-Portfolio-React/static/js/main.6a31d7f1.chunk.js",
+    "main.js.map": "/Elijahs-Portfolio-React/static/js/main.6a31d7f1.chunk.js.map",
+    "runtime-main.js": "/Elijahs-Portfolio-React/static/js/runtime-main.24d462b0.js",
+    "runtime-main.js.map": "/Elijahs-Portfolio-React/static/js/runtime-main.24d462b0.js.map",
+    "static/css/2.1cf03e63.chunk.css": "/Elijahs-Portfolio-React/static/css/2.1cf03e63.chunk.css",
+    "static/js/2.9f9d61a9.chunk.js": "/Elijahs-Portfolio-React/static/js/2.9f9d61a9.chunk.js",
+    "static/js/2.9f9d61a9.chunk.js.map": "/Elijahs-Portfolio-React/static/js/2.9f9d61a9.chunk.js.map",
+    "index.html": "/Elijahs-Portfolio-React/index.html",
+    "static/css/2.1cf03e63.chunk.css.map": "/Elijahs-Portfolio-React/static/css/2.1cf03e63.chunk.css.map",
+    "static/css/main.67e49487.chunk.css.map": "/Elijahs-Portfolio-React/static/css/main.67e49487.chunk.css.map",
+    "static/js/2.9f9d61a9.chunk.js.LICENSE.txt": "/Elijahs-Portfolio-React/static/js/2.9f9d61a9.chunk.js.LICENSE.txt",
+    "static/media/Layout.css": "/Elijahs-Portfolio-React/static/media/backgroundColorSplash.ab5ac626.jpg",
+    "static/media/Work.css": "/Elijahs-Portfolio-React/static/media/weatherDashboard.282a430e.jpg",
+    "static/media/headDown.613a0827.jpg": "/Elijahs-Portfolio-React/static/media/headDown.613a0827.jpg",
+    "static/media/profilePicture.eaf7f81d.jpg": "/Elijahs-Portfolio-React/static/media/profilePicture.eaf7f81d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.24d462b0.js",
+    "static/css/2.1cf03e63.chunk.css",
+    "static/js/2.9f9d61a9.chunk.js",
+    "static/css/main.67e49487.chunk.css",
+    "static/js/main.6a31d7f1.chunk.js"
+  ]
+}
