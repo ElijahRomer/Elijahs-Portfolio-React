@@ -42,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^7.0.0",
     "gh-pages": "^3.2.3"
   }
 }
